@@ -1,0 +1,243 @@
+@import 'fonts.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(100, 54, 110, 1) 18%, rgba(151, 193, 77, 1) 61%, rgba(193, 168, 77, 1) 96%);
+}
+
+.header__nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__list-link {
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  padding: 23px 22px;
+  transition: .3s;
+}
+
+.header__list-link:hover {
+  background: white;
+  color: #D47300;
+  border-radius: 20%;
+}
+
+.intro {
+  background: url('../img/bg.jpg')no-repeat center / cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro__title {
+  color: transparent;
+  background-clip: text;
+  background-image: url('https://gas-kvas.com/uploads/posts/2023-02/1675438103_gas-kvas-com-p-ogon-fonovii-risunok-2.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 10px rgba(255, 140, 0, 0.76);
+
+
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.intro__text {
+  color: #FFF;
+  font-size: 18px;
+}
+
+.intro__span {
+  color: red;
+  font-weight: 700;
+}
+
+.products__left {
+  width: 540px;
+  padding: 15px;
+  border-radius: 6px;
+  background: #FFF;
+}
+
+.products__left-title {
+  color: #2C2A2A;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.products__left-text {
+  color: #9B9B9B;
+  font-size: 16px;
+}
+
+.products__right {
+  width: 540px;
+}
+
+.products__item {
+  width: 255px;
+  padding: 15px;
+  border-radius: 6px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #D47300;
+  object-fit: contain;
+}
+
+.products__item-name {
+  color: #2C2A2A;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 15px 0 10px;
+}
+
+.products__item-desrc {
+  color: #9B9B9B;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.products .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.products {
+  margin-top: -40px;
+}
+
+.footer {
+  background: #322E41;
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 6px;
+}
+
+input {
+  padding: 9px 10px;
+  color: #282828;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9B9B9B;
+}
+
+textarea {
+  padding: 10px;
+  color: #9B9B9B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  height: 86px;
+}
+
+button {
+  padding: 9px 0;
+  background: #544294;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.footer__list-link {
+  color: #FFF;
+  font-size: 16px;
+  transition: .3s;
+}
+.footer__list-link:hover{
+  color: #D47300;
+}
+
+.footer__nav{
+  display: flex;
+  gap: 73px;
+}
+.footer__list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__icons{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
